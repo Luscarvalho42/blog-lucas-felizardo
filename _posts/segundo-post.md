@@ -1,7 +1,7 @@
 ---
-title: 'Desliza a cortina em cima do like'
-date: '2020-03-16'
-excerpt: 'Resumo do segundo post'
+titulo: 'Cupidatat aliqua proident occaeca'
+data: '2020-03-16'
+resumo: 'Labore aute enim dolor reprehenderit deserunt irure elit reprehenderit aliqua in sunt. Do qui ad culpa laborum mollit. Excepteur quis dolore tempor ea adipisicing laborum pariatur.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

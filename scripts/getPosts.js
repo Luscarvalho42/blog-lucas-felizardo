@@ -3,7 +3,7 @@ import grayMatter from 'gray-matter';
 import remark from 'remark';
 import remarkHTML from 'remark-html';
 
-const getAllPosts = () => {
+export const getAllPosts = () => {
   const arquivosMD = fs.readdirSync('./_posts');
 
   const posts = arquivosMD.map((arquivo) => {
@@ -16,9 +16,10 @@ const getAllPosts = () => {
 
     return {
       dados: {
-        titulo: dados.title,
-        resumo: dados.excerpt,
-        link: arquivo.replace('.md'),
+        titulo: dados.titulo,
+        data: dados.data,
+        resumo: dados.resumo,
+        link: arquivo.replace('.md', '')
       },
       conteudo: textoHTML
     }
@@ -27,4 +28,8 @@ const getAllPosts = () => {
   return posts;
 }
 
-export default getAllPosts
+export const getPostLink = (link) => {
+  const posts = getAllPosts();
+
+  return posts.find(post =>  post.dados.link == link)
+}

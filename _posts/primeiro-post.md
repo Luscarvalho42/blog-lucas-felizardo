@@ -1,17 +1,8 @@
 ---
-title: 'Primeiro post, se inscreve no canal'
-date: '2020-03-16'
-excerpt: 'Resumo do primeiro post'
+titulo: 'Eu dolore in adipisicing esse'
+data: '2020-03-16'
+resumo: 'Et veniam consectetur sit nisi. Lorem esse in sint pariatur in sit in velit aute enim laborum. Do nostrud aliquip consequat deserunt ipsum.'
 ---
-
-Primeiro post
-
-- item
-- item
-
-
-1. Alguma coisa
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
 

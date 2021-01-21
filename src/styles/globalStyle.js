@@ -21,9 +21,25 @@ const GlobalStyle = createGlobalStyle`
     text-transform: capitalize;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   p {
     margin-top: 10px;
     text-indent: 1.5rem;
+  }
+
+  a { 
+    text-decoration: none;
+
+    h1 { 
+      transition: 0.5s ease-in-out;
+    }
+    h1:hover {
+      background-color: ${(props) => props.theme.destaque};
+      color: ${(props) => props.theme.background};
+    }
   }
 
   img {
@@ -31,11 +47,6 @@ const GlobalStyle = createGlobalStyle`
     max-height: 50vh;
   }
 
-  pre {
-    padding:10px;
-    background-color: #eee;
-    color: #555;
-  }
 
   @keyframes deslizarCima {
     from {

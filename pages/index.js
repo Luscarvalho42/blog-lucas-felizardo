@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import getAllPosts from '../scripts/getAllPosts'
+import { getAllPosts } from '../scripts/getPosts'
 import getTemaAtual from '../scripts/getTemaAtual'
 import temaClaro from '../src/styles/temaClaro'
 
@@ -27,7 +27,6 @@ const Home = (props) => {
 
 export async function getStaticProps(req)  {
   const posts = getAllPosts()
-  console.log(posts[1].conteudo)
   return {
     props: {
       posts
