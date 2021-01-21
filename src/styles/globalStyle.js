@@ -20,6 +20,32 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 10px;
     text-transform: capitalize;
   }
+
+  p {
+    margin-top: 10px;
+    text-indent: 1.5rem;
+  }
+
+  img {
+    max-width: 90%;
+    max-height: 50vh;
+  }
+
+  pre {
+    padding:10px;
+    background-color: #eee;
+    color: #555;
+  }
+
+  @keyframes deslizarCima {
+    from {
+      transform: translateY(50px);
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
 `
 
 export default GlobalStyle
