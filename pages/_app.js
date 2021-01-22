@@ -1,7 +1,9 @@
-
+import { CookiesProvider } from 'react-cookie'
 
 export default function App({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <CookiesProvider>
+      <Component {...pageProps} />
+    </CookiesProvider>
   )
 }

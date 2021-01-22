@@ -7,14 +7,14 @@ import temaEscuro from '../../styles/temaEscuro'
 
 import {Container, ContainerImagem, Titulo, BtnDarkMode} from './style'
 
-const Cabecalho = (props) => {
+const Cabecalho = ({atualizarTema, setCookie}) => {
   const mudarTema = () => {
-    props.atualizarTema (value => {
+    atualizarTema (value => {
       if(value.background == '#fff') {
-        Cookie.set('tema', 'temaEscuro')
+        setCookie('tema', 'temaEscuro', { path: '/' })
         return temaEscuro
       } else {
-        Cookie.set('tema', 'temaClaro')
+        setCookie('tema', 'temaClaro', { path: '/' })
         return temaClaro
       }
     })
@@ -26,7 +26,6 @@ const Cabecalho = (props) => {
         <Image src="/perfil.png" layout="fill" />
       </ContainerImagem>
       <Titulo>Blog Lucas Felizardo</Titulo>
-
       <BtnDarkMode onClick={mudarTema}>Alterar Tema</BtnDarkMode>
     </Container>
   )

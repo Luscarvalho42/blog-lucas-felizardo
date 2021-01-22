@@ -28,11 +28,13 @@ export const Titulo = Styled.h1`
 
 export const BtnDarkMode = Styled.button`
   background-color: transparent;
-  border: 1px solid ${(props) => props.theme.texto};
-  color: ${(props) => props.theme.texto};
+  border: 1px solid gray;
+  color: gray;
+  font-weight: bold;
   border-radius: 0px;
   padding: 5px;
   transition: 0.3s;
+  margin-top: -10px;
 
   &:hover {
     backdrop-filter: invert(20%);
