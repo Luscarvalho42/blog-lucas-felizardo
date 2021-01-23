@@ -32,7 +32,6 @@ const Home = (props) => {
       <Titulo>Blog Lucas Felizardo | Home</Titulo>
       <Cabecalho atualizarTema={atualizarTema} setCookie={setCookie}/>
       <Feed posts={props.posts}/>
-
     </ThemeProvider>
   )
 }
@@ -45,6 +44,5 @@ export async function getStaticProps()  {
     }
   }
 }
-
 
 export default Home

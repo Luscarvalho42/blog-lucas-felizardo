@@ -9,10 +9,11 @@ import GlobalStyle from '../../src/styles/globalStyle'
 
 import Titulo from '../../src/components/titulo'
 import Cabecalho from '../../src/components/cabecalho'
+import PostTexto from '../../src/components/postTexto'
 
 import { getAllPosts, getPostLink } from '../../scripts/getPosts'
 
-const Post = ({ post }) => {
+const PostPage = ({ post }) => {
   // Inicia com o tema armazenado no Cookie
   const [cookies, setCookie] = useCookies(['tema'])
   const [tema, atualizarTema] = useState(() => {
@@ -28,7 +29,7 @@ const Post = ({ post }) => {
       <GlobalStyle />
       <Titulo>Blog Lucas Felizardo | {post.dados.titulo}</Titulo>
       <Cabecalho atualizarTema={atualizarTema} setCookie={setCookie}/>
-      <h1>{post.dados.titulo}</h1>
+      <PostTexto texto={post.conteudo}>{post.dados.titulo}</PostTexto>
     </ThemeProvider>
   )
 }
@@ -62,4 +63,4 @@ export async function getStaticPaths() {
 }
 
 
-export default Post
+export default PostPage
