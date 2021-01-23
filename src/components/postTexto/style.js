@@ -24,7 +24,7 @@ export const Container = Styled.article`
 
   p {
     font-size: 1.1rem;
-    margin: 5px 30px;
+    margin: 5px;
     line-height: 1.5rem;
   }
 
