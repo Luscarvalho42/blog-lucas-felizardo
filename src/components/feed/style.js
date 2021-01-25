@@ -16,4 +16,11 @@ export const PostStyle = Styled.div`
   animation: deslizarCima 0.5s ease-out;
   animation-delay: ${(props) => props.delay};
   animation-fill-mode: forwards;
+
+  span {
+    margin: 10px;
+    display: block;
+    text-align: right;
+    font-size: 0.7rem;
+  }
 `

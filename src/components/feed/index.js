@@ -10,6 +10,7 @@ const Feed = ({posts}) => {
             <a> <h1>{dados.titulo}</h1> </a>
           </Link>
           <p>{dados.resumo}</p>
+          <span>{dados.data}</span>
         </PostStyle>
       ))}
     </Container>
