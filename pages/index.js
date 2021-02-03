@@ -11,11 +11,11 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../src/styles/globalStyle'
 
 // Componentes
-import Titulo from '../src/components/titulo'
-import Cabecalho from '../src/components/cabecalho'
-import Feed from '../src/components/feed'
+import Titulo from '../src/components/Titulo'
+import Cabecalho from '../src/components/Cabecalho'
+import Feed from '../src/components/Feed'
 
-const Home = (props) => {
+function Home(props) {
   // Inicia com o tema armazenado no Cookie
   const [cookies, setCookie] = useCookies(['tema'])
   const [tema, atualizarTema] = useState(() => {

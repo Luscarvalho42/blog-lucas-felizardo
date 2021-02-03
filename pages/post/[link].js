@@ -7,9 +7,9 @@ import temaEscuro from '../../src/styles/temaEscuro'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../../src/styles/globalStyle'
 
-import Titulo from '../../src/components/titulo'
-import Cabecalho from '../../src/components/cabecalho'
-import PostTexto from '../../src/components/postTexto'
+import Titulo from '../../src/components/Titulo'
+import Cabecalho from '../../src/components/Cabecalho'
+import PostTexto from '../../src/components/PostTexto'
 
 import { getAllPosts, getPostLink } from '../../scripts/getPosts'
 
@@ -29,7 +29,7 @@ const PostPage = ({ post }) => {
       <GlobalStyle />
       <Titulo>Blog Lucas Felizardo | {post.dados.titulo}</Titulo>
       <Cabecalho atualizarTema={atualizarTema} setCookie={setCookie}/>
-      <PostTexto texto={post.conteudo}>{post.dados.titulo}</PostTexto>
+      <PostTexto texto={post.conteudo} data={post.dados.data}>{post.dados.titulo}</PostTexto>
     </ThemeProvider>
   )
 }

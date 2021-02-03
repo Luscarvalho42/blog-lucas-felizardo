@@ -22,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    text-align: center;
+    display: block;
+    text-align: left;
   }
 
   p {
