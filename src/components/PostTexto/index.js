@@ -58,6 +58,16 @@ const Container = Styled.article`
       padding: 10px 0px 5px 10px;
     }
   }
+
+  ul {
+    margin: 10px 0 0 30px;
+    list-style-type: none;
+  }
+
+  li::before {
+    content: "o\t";
+    color: ${(props) => props.theme.destaque};
+  }
 `
 
 const BtnVoltar = Styled.div`
