@@ -59,9 +59,7 @@ const Cabecalho = ({atualizarTema, setCookie}) => {
 
   return(
     <Container>
-      <ContainerImagem tamanho="100px">
-        <Image src="/perfil.png" layout="fill" />
-      </ContainerImagem>
+      <Image src="/profile-pic(1).png" width={200} height={200} />
       <Titulo>Blog Lucas Felizardo</Titulo>
       <BtnDarkMode onClick={mudarTema}>Alterar Tema</BtnDarkMode>
     </Container>
