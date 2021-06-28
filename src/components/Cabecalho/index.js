@@ -12,21 +12,17 @@ const Container = Styled.header`
   padding: 30px;
 `
 
-const ContainerImagem = Styled.div`
-  border: none;
-  border-radius: 100%;
-  height: ${(props) => props.tamanho};
-  width: ${(props) => props.tamanho};
-  overflow: hidden;
-  backdrop-filter: invert(5%); 
+const Titulo = Styled.h1`
+  color: ${(props) => props.theme.destaque};
 `
 
-const Titulo = Styled.h1`
-  text-align: center;
-  display: inline-block;
-  color: ${(props) => props.theme.background};
-  background-color: ${(props) => props.theme.destaque};
-  padding: 5px;
+const DivCentralizada = Styled.div`
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: solid 5px #DF3E46;
+  background-color: white;
 `
 
 const BtnDarkMode = Styled.button`
@@ -59,8 +55,11 @@ const Cabecalho = ({atualizarTema, setCookie}) => {
 
   return(
     <Container>
-      <Image src="/profile-pic(1).png" width={200} height={200} />
-      <Titulo>Blog Lucas Felizardo</Titulo>
+      <Image src="/perfil.png" width={200} height={200} />
+      <DivCentralizada>
+        <Image src="/logo.svg" width={50} height={50}/>
+        <Titulo>Lucas Felizardo</Titulo>
+      </DivCentralizada>
       <BtnDarkMode onClick={mudarTema}>Alterar Tema</BtnDarkMode>
     </Container>
   )

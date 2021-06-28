@@ -17,30 +17,16 @@ const GlobalStyle = createGlobalStyle`
   h2,
   h3 {
     color: ${(props) => props.theme.destaque};
-    margin-bottom: 10px;
-    text-transform: capitalize;
-  }
-
-  h1 {
-    display: block;
-    text-align: left;
   }
 
   p {
     margin-top: 10px;
+    font-size: 1.06rem;
     text-indent: 1.5rem;
   }
 
   a { 
     text-decoration: none;
-
-    h1 { 
-      transition: 0.5s ease-in-out;
-    }
-    h1:hover {
-      background-color: ${(props) => props.theme.destaque};
-      color: ${(props) => props.theme.background};
-    }
   }
 
   img {
