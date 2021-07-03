@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { useCookies } from 'react-cookie';
 
-import temaClaro from '../../src/styles/temaClaro'
-import temaEscuro from '../../src/styles/temaEscuro'
+import TemaClaro from '../../src/styles/TemaClaro'
+import TemaEscuro from '../../src/styles/TemaEscuro'
 
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../../src/styles/globalStyle'
@@ -17,10 +17,10 @@ const PostPage = ({ post }) => {
   // Inicia com o tema armazenado no Cookie
   const [cookies, setCookie] = useCookies(['tema'])
   const [tema, atualizarTema] = useState(() => {
-    if(cookies.tema == 'temaEscuro') {
-      return temaEscuro
+    if(cookies.tema == 'TemaEscuro') {
+      return TemaEscuro
     } else {
-      return temaClaro
+      return TemaClaro
     }
   })
 
@@ -28,7 +28,7 @@ const PostPage = ({ post }) => {
     <ThemeProvider theme={tema}>
       <GlobalStyle />
       <Titulo>Blog Lucas Felizardo | {post.dados.titulo}</Titulo>
-      <Cabecalho atualizarTema={atualizarTema} setCookie={setCookie}/>
+      <Cabecalho atualizarTema={atualizarTema} setCookie={setCookie} cookies={cookies}/>
       <PostTexto texto={post.conteudo} data={post.dados.data}>{post.dados.titulo}</PostTexto>
     </ThemeProvider>
   )

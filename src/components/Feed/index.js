@@ -28,7 +28,6 @@ const PostStyle = Styled.div`
 
   animation: deslizarCima 0.5s ease-out;
   transition: 0.2s;
-  animation-delay: ${(props) => props.delay};
   animation-fill-mode: forwards;
 
   span {
@@ -39,16 +38,16 @@ const PostStyle = Styled.div`
   }
 
   &:hover {
-    border: 4px solid #DF3E47;
+    border: 1px solid #DF3E47;
   }
 `
 
 const Feed = ({posts}) => {
   return(
     <Container>
-      {posts.map( ({dados, conteudo}) => (
-          <Link href={`/post/${dados.link}`}>
-            <PostStyle key={dados.link}>
+      {posts.map(({dados}, indice) => (
+          <Link href={`/post/${dados.link}`} key={indice}>
+            <PostStyle key={indice}>
               <a> <h1>{dados.titulo}</h1> </a>
               <p>{dados.resumo}</p>
             </PostStyle>
